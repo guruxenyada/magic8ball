@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Magic 8 Ball</h1>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="question">Ask me anything! </label>
+          <input
+            type="text"
+            id="question"
+            name="question"
+            placeholder="yes or no questions only"
+            class="form-control border"
+          />
+          <small class="form-text text-danger validationMsg"></small>
+        </div>
+        <button type="submit" class="btn btn-outline-dark my-3" name="askBtn">
+          Ask
+        </button>
+      </div>
+      <div class="card-footer" id="answers">
+        <small id="result" class="form-text text-success"></small>
+      </div>
+    </div>
+  </body>
+</html>
